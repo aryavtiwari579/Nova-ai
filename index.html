@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7fb">
+  <meta name="description" content="Nova AI — a thoughtful space to ask, explore, and create.">
+  <title>Nova AI — Your AI workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><div class="brand-mark">✦</div><span>nova<span class="brand-light">.ai</span></span></div>
+      <button class="new-chat" id="newChat"><span>＋</span> New chat <kbd>⌘ K</kbd></button>
+      <label class="search-box"><span>⌕</span><input id="searchChats" type="search" placeholder="Search conversations" aria-label="Search conversations"></label>
+      <div class="side-label">YOUR CHATS <span id="chatCount">0</span></div>
+      <div class="chat-list" id="chatList"></div>
+      <div class="sidebar-bottom">
+        <div class="plan-card"><div class="plan-orb">✧</div><div><strong>Your ideas, amplified.</strong><small>Powered by Groq AI</small></div></div>
+        <button class="profile"><span class="avatar-mini">Y</span><span class="profile-text"><strong>Your workspace</strong><small>Personal plan</small></span><span class="dots">···</span></button>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><button id="mobileMenu" class="icon-btn mobile-menu" aria-label="Open menu">☰</button><div class="model-pill"><span class="online-dot"></span> Nova <span class="model-name">· Groq</span></div><div class="top-actions"><button class="icon-btn" id="exportChat" title="Export conversation" aria-label="Export conversation">⇩</button><button class="icon-btn" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">☾</button><button class="icon-btn" id="clearChat" title="Clear conversation" aria-label="Clear conversation">⌫</button><div class="avatar">Y</div></div></header>
+      <section class="conversation" id="conversation" aria-live="polite"></section>
+      <div class="composer-wrap"><div class="suggestions" id="suggestions"><button>✧ &nbsp;Help me brainstorm an idea</button><button>⌘ &nbsp;Explain something simply</button><button>↗ &nbsp;Write something great</button></div><form class="composer" id="composer"><textarea id="messageInput" rows="1" placeholder="Message Nova..." aria-label="Message Nova" maxlength="8000"></textarea><div class="composer-tools"><span class="composer-hint">↵ to send · ⇧↵ for new line</span><button id="stopButton" class="stop-btn" type="button" hidden aria-label="Stop generating">■</button><button class="send-btn" type="submit" aria-label="Send message">↑</button></div></form><div class="disclaimer">Nova can make mistakes. Check important information.</div></div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
