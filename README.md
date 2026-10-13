@@ -2,6 +2,10 @@
 
 Nova AI is a responsive AI chatbot built with HTML, CSS, and vanilla JavaScript. It sends questions to Groq through a Netlify Function, keeping the API key on the server. Conversations are saved in the browser, and replies can include formatted text, code, and tables.
 
+## Project Link
+
+https://nova-ai-aryav.netlify.app
+
 ## Project screenshots
 
 ### Chat home
